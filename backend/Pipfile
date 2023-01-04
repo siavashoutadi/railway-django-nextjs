@@ -7,6 +7,7 @@ name = "pypi"
 django = "*"
 gunicorn = "*"
 strawberry-django-auth = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
