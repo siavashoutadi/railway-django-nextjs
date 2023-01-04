@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+watchPatterns = ["frontend/**"]
+
+[deploy]
+startCommand = "yarn start"
+healthcheckPath = "/"
+restartPolicyType = "ON_FAILURE"
+healthcheckTimeout = 300
+restartPolicyMaxRetries = 10

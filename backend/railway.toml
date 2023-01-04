@@ -1,0 +1,9 @@
+[build]
+builder = "NIXPACKS"
+watchPatterns = ["backend/**"]
+
+[deploy]
+healthcheckPath = "/"
+restartPolicyType = "ON_FAILURE"
+healthcheckTimeout = 300
+restartPolicyMaxRetries = 10
