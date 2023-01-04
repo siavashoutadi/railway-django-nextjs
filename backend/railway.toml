@@ -3,7 +3,7 @@ builder = "NIXPACKS"
 watchPatterns = ["backend/**"]
 
 [deploy]
-healthcheckPath = "/"
+healthcheckPath = "/graphql"
 restartPolicyType = "ON_FAILURE"
 healthcheckTimeout = 300
 restartPolicyMaxRetries = 10
