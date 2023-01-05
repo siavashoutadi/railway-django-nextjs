@@ -3,7 +3,7 @@ builder = "NIXPACKS"
 watchPatterns = ["backend/**"]
 
 [deploy]
-healthcheckPath = "/admin"
+healthcheckPath = "/ht/M4ZUFrstgmRNMfJfclTsyCe6Xosmd36EE2NxeU4CDUg"
 restartPolicyType = "ON_FAILURE"
 healthcheckTimeout = 300
 restartPolicyMaxRetries = 10

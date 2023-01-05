@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'users',
     "strawberry_django",
     "gqlauth",
+    'health_check',
+    'health_check.db',
+    'health_check.contrib.psutil',
 ]
 
 MIDDLEWARE = [

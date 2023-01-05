@@ -9,6 +9,8 @@ gunicorn = "*"
 strawberry-django-auth = "*"
 psycopg2 = "*"
 whitenoise = "*"
+django-health-check = "*"
+psutil = "*"
 
 [dev-packages]
 
