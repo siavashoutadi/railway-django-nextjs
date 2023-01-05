@@ -8,6 +8,7 @@ django = "*"
 gunicorn = "*"
 strawberry-django-auth = "*"
 psycopg2 = "*"
+whitenoise = "*"
 
 [dev-packages]
 
