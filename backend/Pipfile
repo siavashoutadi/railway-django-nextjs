@@ -11,6 +11,7 @@ psycopg2 = "*"
 whitenoise = "*"
 django-health-check = "*"
 psutil = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
