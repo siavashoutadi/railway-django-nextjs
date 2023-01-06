@@ -8,6 +8,7 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
+    "prepare": "cd .. && husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -26,6 +27,7 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "husky": "^8.0.3",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "tailwindcss": "^3.2.4",
