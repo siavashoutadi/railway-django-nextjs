@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+for f in $(git diff --staged -- frontend); do
+  cd frontend
+  yarn build
+  cd ..
+  break
+done
