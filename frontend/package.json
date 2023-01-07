@@ -15,7 +15,7 @@
     "lint": "next lint",
     "prettier": "prettier --write .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook "
   },
   "dependencies": {
     "next": "13.1.1",
