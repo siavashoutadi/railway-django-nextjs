@@ -1,3 +1,12 @@
+import Head from '../components/layout/head/HeadElement';
+
 export default function Home() {
-  return <h1 className="text-3xl font-bold">Hello world!</h1>;
+  return (
+    <>
+      <Head title="My app" description="My app is cool" keywords="My app" />
+      <main className="py-10">
+        <h1>Hello World!</h1>
+      </main>
+    </>
+  );
 }

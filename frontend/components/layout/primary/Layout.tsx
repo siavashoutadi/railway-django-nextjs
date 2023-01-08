@@ -6,8 +6,8 @@ const Layout: React.FC<ILayout> = ({ children }) => {
   return (
     <>
       <Nav />
-      <div className="container mx-auto my-10">
-        <main>{children}</main>
+      <div className="container mx-auto">
+        <div>{children}</div>
       </div>
     </>
   );
