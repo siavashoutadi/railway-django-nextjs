@@ -15,7 +15,7 @@ const Error: React.FC<IError> = ({ errorTitle, errorList }) => {
         <div className="ml-3">
           <h3 className="text-sm font-medium text-red-800">{errorTitle}</h3>
           <div className="mt-2 text-sm text-red-700">
-            <ul className="list-disc pl-5 space-y-1">
+            <ul className="list-disc space-y-1 pl-5">
               {errorList &&
                 errorList.map((value, index) => {
                   return <li key={index}>{value}</li>;
