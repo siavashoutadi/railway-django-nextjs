@@ -1,4 +1,5 @@
 import { gql, useApolloClient, useMutation } from '@apollo/client';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FormEvent, useContext, useState } from 'react';
@@ -52,7 +53,13 @@ function Login() {
       <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
-            <img className="mx-auto h-12 w-auto" src="favicon.ico" alt="logo" />
+            <Image
+              className="mx-auto"
+              src="/favicon.ico"
+              alt="logo"
+              width={50}
+              height={50}
+            />
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
               Sign in to your account
             </h2>
