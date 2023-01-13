@@ -10,14 +10,10 @@ export interface INavItem {
 
 const NavItem: React.FC<INavItem> = ({ href, text, icon }) => {
   return (
-    <Link
-      href={href}
-      className="flex content-center px-2 text-gray-700 hover:text-gray-500"
-      legacyBehavior
-    >
-      <div className="flex content-center items-center align-middle">
+    <Link href={href}>
+      <div className="font-semibold leading-6 hover:text-brand-500">
         <span className="hidden lg:block">{text}</span>
-        <span className="px-1">
+        <span className="lg:hidden">
           <Icon format="outline" icon={icon} />
         </span>
       </div>

@@ -6,7 +6,7 @@ import {
   ApolloClient,
   ApolloProvider,
   createHttpLink,
-  InMemoryCache
+  InMemoryCache,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { AuthContextProvider } from '../store/auth-context';
