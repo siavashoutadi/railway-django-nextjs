@@ -49,7 +49,7 @@ function Login() {
         )}
       </div>
       {loading && <Loading />}
-      <div className="flex min-h-screen items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
             <img className="mx-auto h-12 w-auto" src="favicon.ico" alt="logo" />
@@ -75,7 +75,7 @@ function Login() {
                   type="username"
                   autoComplete="username"
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
                   placeholder="Username"
                   onChange={(event) => setUsername(event.target.value)}
                 />
@@ -90,7 +90,7 @@ function Login() {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
                   placeholder="Password"
                   onChange={(event) => setPassword(event.target.value)}
                 />
@@ -100,7 +100,7 @@ function Login() {
               <div className="text-sm">
                 <Link
                   href="/forgotpassword"
-                  className="font-medium text-green-600 hover:text-green-500"
+                  className="font-medium text-brand-600 hover:text-brand-500"
                 >
                   Forgot your password?
                 </Link>
@@ -110,7 +110,7 @@ function Login() {
             <div>
               <button
                 type="submit"
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                className="group relative flex w-full justify-center rounded-md border border-transparent bg-brand-600 py-2 px-4 text-sm font-medium text-white hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
               >
                 Sign in
               </button>
@@ -118,7 +118,7 @@ function Login() {
             <div>
               <Link
                 href="/join"
-                className="group relative flex w-full justify-center rounded-md border border-green-500 py-2 px-4 text-sm font-medium hover:bg-green-100"
+                className="group relative flex w-full justify-center rounded-md border border-brand-500 py-2 px-4 text-sm font-medium hover:bg-brand-100"
               >
                 Join now
               </Link>
