@@ -20,7 +20,7 @@ export default function Document() {
           }}
         />
       </Head>
-      <body className="h-screen bg-zinc-50 text-slate-800 dark:bg-slate-900 dark:text-zinc-300">
+      <body className="theme-base h-screen">
         <Main />
         <NextScript />
       </body>
