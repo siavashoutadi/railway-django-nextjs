@@ -9,12 +9,18 @@ import {
   InMemoryCache,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import HeadElement from '../components/layout/head/HeadElement';
 import { AuthContextProvider } from '../store/auth-context';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AuthContextProvider>
       <ApolloProvider client={client}>
+        <HeadElement
+          title="My app"
+          description="My cool app"
+          keywords="My app"
+        ></HeadElement>
         <Layout>
           <Component {...pageProps} />
         </Layout>
