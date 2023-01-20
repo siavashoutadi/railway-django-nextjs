@@ -51,88 +51,87 @@ function Login() {
         )}
       </div>
       {loading && <Loading />}
-      <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-md space-y-8">
-          <div>
-            <Image
-              className="mx-auto"
-              src="/favicon.ico"
-              alt="logo"
-              width={50}
-              height={50}
-            />
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              Sign in to your account
-            </h2>
-          </div>
-          <form
-            className="mt-8 space-y-6"
-            action="#"
-            method="POST"
-            onSubmit={(event) => submitHandler(event)}
-          >
-            <input type="hidden" name="remember" defaultValue="true" />
-            <div className="-space-y-px rounded-md shadow-sm">
-              <div>
-                <label htmlFor="username" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="username"
-                  name="username"
-                  type="username"
-                  autoComplete="username"
-                  required
-                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
-                  placeholder="Username"
-                  onChange={(event) => setUsername(event.target.value)}
-                />
-              </div>
-              <div>
-                <label htmlFor="password" className="sr-only">
-                  Password
-                </label>
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
-                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
-                  placeholder="Password"
-                  onChange={(event) => setPassword(event.target.value)}
-                />
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="text-sm">
-                <Link
-                  href="/forgotpassword"
-                  className="font-medium text-brand-600 hover:text-brand-500"
-                >
-                  Forgot your password?
-                </Link>
-              </div>
-            </div>
-
+      <div className="absolute left-0 top-0 flex h-screen w-full flex-col justify-center px-3 text-center align-middle">
+        <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-md space-y-8">
             <div>
+              <Image
+                className="mx-auto"
+                src="/favicon.ico"
+                alt="logo"
+                width={50}
+                height={50}
+              />
+              <h2 className="mt-6 text-center text-3xl font-extrabold ">
+                Sign in to your account
+              </h2>
+            </div>
+            <form
+              className="mt-8 space-y-6"
+              action="#"
+              method="POST"
+              onSubmit={(event) => submitHandler(event)}
+            >
+              <input type="hidden" name="remember" defaultValue="true" />
+              <div className="-space-y-px rounded-md shadow-sm">
+                <div>
+                  <label htmlFor="username" className="sr-only">
+                    Email address
+                  </label>
+                  <input
+                    id="username"
+                    name="username"
+                    type="username"
+                    autoComplete="username"
+                    required
+                    className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2  placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
+                    placeholder="Username"
+                    onChange={(event) => setUsername(event.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="password" className="sr-only">
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autoComplete="current-password"
+                    required
+                    className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2  placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
+                    placeholder="Password"
+                    onChange={(event) => setPassword(event.target.value)}
+                  />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <div className="text-sm">
+                  <Link
+                    href="/forgotpassword"
+                    className="font-medium text-brand-600 hover:text-brand-500"
+                  >
+                    Forgot your password?
+                  </Link>
+                </div>
+              </div>
               <Button
                 text="Sign in"
                 intent={'primary'}
                 size="medium-full"
                 type="submit"
-              />
-            </div>
-            <div>
-              <Link href="/join">
-                <Button
-                  text="Signup"
-                  intent={'secondary'}
-                  size={'medium-full'}
-                ></Button>
-              </Link>
-            </div>
-          </form>
+              ></Button>
+              <div>
+                <Link href="/join">
+                  <Button
+                    text="Signup"
+                    intent={'secondary'}
+                    size={'medium-full'}
+                  ></Button>
+                </Link>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </>
