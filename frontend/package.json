@@ -17,7 +17,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "yo": "yo",
-    "yo-component": "yo ./.generators/component/index.js"
+    "c": "yo ./.generators/component/base/index.js",
+    "vc": "yo ./.generators/component/variant/index.js"
   },
   "dependencies": {
     "@apollo/client": "^3.7.3",
