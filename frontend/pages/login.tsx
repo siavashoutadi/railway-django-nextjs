@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FormEvent, useContext, useState } from 'react';
+import Button from '../components/button/Button';
 
 import Error from '../components/error/Error';
 import Loading from '../components/loading/Loading';
@@ -115,19 +116,20 @@ function Login() {
             </div>
 
             <div>
-              <button
+              <Button
+                text="Sign in"
+                intent={'primary'}
+                size="medium-full"
                 type="submit"
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-brand-600 py-2 px-4 text-sm font-medium text-white hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
-              >
-                Sign in
-              </button>
+              />
             </div>
             <div>
-              <Link
-                href="/join"
-                className="group relative flex w-full justify-center rounded-md border border-brand-500 py-2 px-4 text-sm font-medium hover:bg-brand-100"
-              >
-                Join now
+              <Link href="/join">
+                <Button
+                  text="Signup"
+                  intent={'secondary'}
+                  size={'medium-full'}
+                ></Button>
               </Link>
             </div>
           </form>
