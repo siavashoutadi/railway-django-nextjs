@@ -84,7 +84,7 @@ function Login() {
                     type="username"
                     autoComplete="username"
                     required
-                    className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2  placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
+                    className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-theme-light-text  placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
                     placeholder="Username"
                     onChange={(event) => setUsername(event.target.value)}
                   />
@@ -99,7 +99,7 @@ function Login() {
                     type="password"
                     autoComplete="current-password"
                     required
-                    className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2  placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
+                    className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-theme-light-text placeholder-gray-500 focus:z-10 focus:border-brand-500 focus:outline-none focus:ring-brand-500 sm:text-sm"
                     placeholder="Password"
                     onChange={(event) => setPassword(event.target.value)}
                   />
