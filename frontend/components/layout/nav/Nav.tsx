@@ -64,7 +64,7 @@ function ModeToggle() {
 
 function NavDesktop() {
   return (
-    <nav className="fixed top-0 w-full border-b-2 border-zinc-200 py-2 dark:border-slate-800 lg:block ">
+    <nav className="fixed top-0 z-10 w-full border-b-2 border-zinc-200 py-2 dark:border-slate-800 lg:block ">
       <div className="container">
         <div className="flex justify-around space-x-8 py-2 lg:justify-end">
           <NavItem href="/login" text="Login" icon="LoginIcon" />
@@ -78,7 +78,7 @@ function NavDesktop() {
 
 function NavMobile() {
   return (
-    <nav className="fixed bottom-0 hidden w-full border-b-2 border-zinc-200 py-2">
+    <nav className="fixed bottom-0 z-10 hidden w-full border-b-2 border-zinc-200 py-2">
       <div className="container">
         <div className="flex justify-around space-x-8 py-2 lg:justify-end">
           <NavItem href="/login" text="Login" icon="LoginIcon" />
