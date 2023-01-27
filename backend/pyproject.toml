@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "infragen"
+version = "0.1.0"
+description = "Infragen builds infrastructure"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.1"
+django = "^4.1.5"
+gunicorn = "^20.1.0"
+psycopg2 = "^2.9.5"
+whitenoise = "^6.3.0"
+psutil = "^5.9.4"
+django-health-check = "^3.17.0"
+django-cors-headers = "^3.13.0"
+strawberry-django-auth = "^0.374.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
